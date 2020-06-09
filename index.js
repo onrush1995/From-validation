@@ -8,8 +8,8 @@ const password2 = document.getElementById("password2");
 function showError(input,message){
     const formControl = input.parentElement;
     formControl.className = "form-control error";
-    const smalll = formControl.querSelector("small");
-    smalll.innerText = message;
+    const small = formControl.querySelector("small");
+    small.innerText = message;
 }
 
 // Show success outline 
@@ -21,12 +21,28 @@ function showSuccess(input){
 // Event Listener
 form.addEventListener("submit",function(e){
     e.preventDefault();
-    console.log("submit");
 
     if(username.value === ""){
         showError(username, "username is required");
     } else{
         showSuccess(username);
+    }
+
+    if(email.value === ""){
+        showError(email, "Email is required");
+    } else{
+        showSuccess(email);
+    }
+
+    if(password.value === ""){
+        showError(password, "Password is required");
+    } else{
+        showSuccess(password);
+    }
+    if(password2.value === ""){
+        showError(password2, "Password is required");
+    } else{
+        showSuccess(password2);
     }
 
     
