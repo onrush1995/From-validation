@@ -1,0 +1,19 @@
+{
+  "name": "from-validation",
+  "version": "1.0.0",
+  "description": "Add file in the heroku server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onrush1995/From-validation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/onrush1995/From-validation/issues"
+  },
+  "homepage": "https://github.com/onrush1995/From-validation#readme"
+}
